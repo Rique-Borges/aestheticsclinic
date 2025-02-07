@@ -1,0 +1,88 @@
+// src/app/components/Footer.js
+import Link from 'next/link';
+
+export default function Footer() {
+  return (
+    <footer className="bg-gray-50 text-gray-800 py-8">
+  <div className="container mx-auto flex justify-evenly flex-wrap">
+    {/* Column 1: Navbar Links */}
+    <div>
+      <h4 className="text-xl font-bold mb-4">Navigation</h4>
+      <ul className="space-y-2">
+        <li>
+          <a href="#about" className="hover:text-gray-600">
+            About Us
+          </a>
+        </li>
+        <li>
+          <a href="#treatments" className="hover:text-gray-600">
+            Treatments
+          </a>
+        </li>
+        <li>
+          <a href="#pricing" className="hover:text-gray-600">
+            Pricing
+          </a>
+        </li>
+        <li>
+          <a href="#contact" className="hover:text-gray-600">
+            Contact Us
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    {/* Column 2: Contact Info */}
+    <div>
+      <h4 className="text-xl font-bold mb-4">Contact Info</h4>
+      <ul className="space-y-2">
+        <li>42 Richmond St, Portobello D02TV08</li>
+        <li>Tuesday to Saturday: 8 AM - 8 PM</li>
+        <li>
+          <a href="tel:+353874038654" className="hover:text-gray-600">
+            087 403 8654
+          </a>
+        </li>
+        <li>
+          <a href="mailto:yourclinic@email.com" className="hover:text-gray-600">
+            aestheticsclinicie@email.com
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    {/* Column 3: Social Media */}
+    <div>
+      <h4 className="text-xl font-bold mb-4">Follow Us</h4>
+      <ul className="space-y-2">
+        <li>
+          <a href="#" className="hover:text-gray-600">
+            TikTok
+          </a>
+        </li>
+        <li>
+          <a href="#" className="hover:text-gray-600">
+            Instagram
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    {/* Column 4: Book Appointment Button */}
+    <div className="flex items-center">
+      <button className="bg-black text-white px-6 py-3 rounded hover:bg-gray-700">
+        Book an Appointment
+      </button>
+    </div>
+  </div>
+
+  {/* Footer Bottom */}
+  <div className="mt-8 text-center text-gray-600">
+    &copy; 2025 The Aesthetic Clinic | All rights reserved
+  </div>
+</footer>
+
+
+
+  );
+}
