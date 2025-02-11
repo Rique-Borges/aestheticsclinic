@@ -1,8 +1,8 @@
 const CTA = () => {
     return (
-      <section className="py-8 px-10 flex flex-col md:flex-row items-center justify-center gap-12 mx-12 ml-48">
+      <section className="py-0 px-10 flex flex-col md:flex-row items-center justify-center gap-0 mx-24 ml-48">
         {/* Left Image */}
-        <div className="w-full md:w-1/2 mx-32">
+        <div className="w-full md:w-1/2 mx-24">
           <img
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4txBl0W8iNYxHR5w6fXliE5bhQSKXaszTiw&s"
             alt="Aesthetic treatment"

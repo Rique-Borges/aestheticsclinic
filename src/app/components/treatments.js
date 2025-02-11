@@ -15,7 +15,7 @@ const Treatments = () => {
       <h2 className="text-center text-5xl font-bold text-gray-900 mb-8">
         Our Treatments
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-4">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-y-8 px-32 place-items-center">
         {treatments.map((treatment, index) => (
           <TreatmentCard key={index} title={treatment.title} image={treatment.image} />
         ))}
@@ -25,3 +25,4 @@ const Treatments = () => {
 };
 
 export default Treatments;
+

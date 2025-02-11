@@ -11,11 +11,11 @@ export default function Home() {
       {/* Main content can be added here later */}
       <main className="min-h-screen bg-gray-20">
         <HeroSection/>
-        {/*<Treatments/>
+        <Treatments/>
         <CTA/>
         <AboutMe/>
         <VisitOurClinic/>
-        <ContactUs/>*/}
+        <ContactUs/>
       </main>
     </div>
   );

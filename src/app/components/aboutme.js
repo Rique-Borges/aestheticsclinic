@@ -1,24 +1,24 @@
 const AboutMe = () => {
     return (
-      <section className="py-16 px-10 flex flex-col md:flex-row items-center justify-center gap-12 mx-32">
+      <section className="py-16 px-10 flex flex-col md:flex-row items-center justify-center gap-12 mx-48">
         {/* Left Text Content */}
         <div className="w-full md:w-1/2 text-center md:text-left m-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">
             Enhancing Your Natural Beauty <br /> with Confidence
           </h2>
-          <p className="text-gray-600 text-md mb-4">
+          <p className="text-gray-600 text-justify text-md mb-4">
             I believe aesthetic care is more than just appearance—it’s about 
             well-being, self-esteem, and feeling your best every day. With 4 years 
             of experience, I specialize in fillers, polynucleotides and stay at 
             the forefront of the latest techniques to ensure safe, natural-looking 
             results.
           </p>
-          <p className="text-gray-600 text-md mb-4">
+          <p className="text-gray-600 text-justify text-md mb-4">
             My approach is all about personalized care. I take the time to 
             understand your goals and design treatments that enhance your unique 
             beauty while prioritizing safety, transparency, and comfort.
           </p>
-          <p className="text-gray-600 text-md mb-6">
+          <p className="text-gray-600 text-justify text-md mb-6">
             My journey in aesthetics began when I saw firsthand how even small 
             enhancements could transform not just looks, but confidence. Seeing my 
             clients leave feeling empowered and radiant is what drives me every 
@@ -32,7 +32,7 @@ const AboutMe = () => {
         </div>
   
         {/* Right Image with Label */}
-        <div className="relative w-full md:w-1/2">
+        <div className="relative w-full md:w-1/2 m-4">
           <img
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4txBl0W8iNYxHR5w6fXliE5bhQSKXaszTiw&s"
             alt="Telma Borges Simoes"
