@@ -10,7 +10,7 @@ export default function Footer() {
       <h4 className="text-xl font-bold mb-4">Navigation</h4>
       <ul className="space-y-2">
         <li>
-          <a href="#about" className="hover:text-gray-600">
+          <a href="#about-me" className="hover:text-gray-600">
             About Us
           </a>
         </li>
@@ -20,12 +20,12 @@ export default function Footer() {
           </a>
         </li>
         <li>
-          <a href="#pricing" className="hover:text-gray-600">
+          <a href="/pricing" className="hover:text-gray-600">
             Pricing
           </a>
         </li>
         <li>
-          <a href="#contact" className="hover:text-gray-600">
+          <a href="#contact-us" className="hover:text-gray-600">
             Contact Us
           </a>
         </li>
@@ -70,7 +70,7 @@ export default function Footer() {
 
     {/* Column 4: Book Appointment Button */}
     <div className="flex items-center">
-      <button className="bg-black text-white px-6 py-3 rounded hover:bg-gray-700">
+      <button className="bg-[#6FC4FA] text-white px-6 py-3 rounded-3xl  hover:bg-[#8ED1FB] transition">
         Book an Appointment
       </button>
     </div>

@@ -1,6 +1,7 @@
+import Link from "next/link";
 const AboutMe = () => {
     return (
-      <section className="py-16 px-10 flex flex-col md:flex-row items-center justify-center gap-12 mx-48">
+      <section className="py-16 px-10 flex flex-col md:flex-row items-center justify-center gap-12 mx-48" id="about-me">
         {/* Left Text Content */}
         <div className="w-full md:w-1/2 text-center md:text-left m-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">
@@ -26,22 +27,27 @@ const AboutMe = () => {
             and authenticity. Book a consultation, and let’s create a plan 
             tailored just for you!
           </p>
-          <button className="bg-black text-white px-6 py-3 rounded-2xl text-lg font-medium shadow-md hover:bg-gray-800 transition">
+          <div className="w-full flex justify-center">
+            <Link href="/pricing">
+          <button className="bg-[#6FC4FA] text-white px-6 py-3 rounded-full text-lg font-medium shadow-md hover:bg-[#8ED1FB] transition">
             Check our Treatments
           </button>
+          </Link>
+          </div>
         </div>
   
         {/* Right Image with Label */}
         <div className="relative w-full md:w-1/2 m-4">
-          <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4txBl0W8iNYxHR5w6fXliE5bhQSKXaszTiw&s"
-            alt="Telma Borges Simoes"
-            className="w-full rounded-2xl shadow-lg"
-          />
-          <div className="absolute bottom-0 left-0 right-0 bg-black text-white text-center py-3 rounded-b-2xl text-lg">
-            Telma Borges Simoes
-          </div>
-        </div>
+  <img
+    src="/Assets/image4.jpg"
+    alt="Telma Borges Simoes"
+    className="w-full rounded-2xl shadow-lg"
+  />
+  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent text-white text-center py-3 rounded-b-2xl text-lg font-bold">
+    Telma Borges Simões
+  </div>
+</div>
+
       </section>
     );
   };

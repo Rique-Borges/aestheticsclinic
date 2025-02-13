@@ -4,7 +4,7 @@ const CTA = () => {
         {/* Left Image */}
         <div className="w-full md:w-1/2 mx-24">
           <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4txBl0W8iNYxHR5w6fXliE5bhQSKXaszTiw&s"
+            src="/Assets/image1.jpeg"
             alt="Aesthetic treatment"
             className=" rounded-2xl shadow-lg w-full max-w-sm md:max-w-md"
           />
@@ -18,7 +18,7 @@ const CTA = () => {
           <p className="text-gray-600 text-xl mb-6">
             Limited slots available. <br /> Book your appointment today!
           </p>
-          <button className="bg-black text-white px-6 py-3 rounded-2xl text-lg font-medium shadow-md hover:bg-gray-800 transition">
+          <button className="bg-[#6FC4FA] text-white px-6 py-3 rounded-full text-lg font-medium shadow-md hover:bg-[#8ED1FB] transition">
             Book An Appointment
           </button>
         </div>

@@ -1,10 +1,10 @@
 const ContactUs = () => {
     return (
-      <section className="max-w-5xl mx-auto mt-4 p-6 bg-white rounded-2xl flex flex-col md:flex-row items-center">
+      <section className="max-w-5xl mx-auto mt-4 p-6 bg-white rounded-2xl flex flex-col md:flex-row items-center" id="contact-us">
         {/* Clinic Image */}
         <div className="w-3/4 md:w-2/5 ml-24">
           <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4txBl0W8iNYxHR5w6fXliE5bhQSKXaszTiw&s" // Change this path to your actual image
+            src="/Assets/image6.jpg" // Change this path to your actual image
             alt="Clinic Exterior"
             className="rounded-2xl w-full h-auto"
           />

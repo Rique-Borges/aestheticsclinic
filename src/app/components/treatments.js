@@ -1,7 +1,7 @@
 import TreatmentCard from "./treatmentcard";
 
 const treatments = [
-  { title: "Fillers", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4txBl0W8iNYxHR5w6fXliE5bhQSKXaszTiw&s" },
+  { title: "Fillers", image: "/Assets/image5.jpg" },
   { title: "Polynucleotides", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4txBl0W8iNYxHR5w6fXliE5bhQSKXaszTiw&s" },
   { title: "Profhilo", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4txBl0W8iNYxHR5w6fXliE5bhQSKXaszTiw&s" },
   { title: "Skin Boosters", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4txBl0W8iNYxHR5w6fXliE5bhQSKXaszTiw&s" },
@@ -11,7 +11,7 @@ const treatments = [
 
 const Treatments = () => {
   return (
-    <section className="py-16 bg-gray-50 mx-32">
+    <section className="py-16 bg-gray-50 mx-32" id="treatments">
       <h2 className="text-center text-5xl font-bold text-gray-900 mb-8">
         Our Treatments
       </h2>

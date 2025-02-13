@@ -14,7 +14,7 @@ const VisitOurClinic = () => {
         href="https://maps.app.goo.gl/7YYV8KSfB4yrxBbo8"
         target="_blank"
         rel="noopener noreferrer"
-        className="absolute top-4 right-4 bg-white text-black py-2 px-4 rounded shadow-md hover:bg-gray-100"
+        className="absolute top-8 right-8 bg-[#6FC4FA] text-white text-xl px-10 py-3 rounded-full shadow-xl hover:bg-[#8ED1FB] transition"
       >
         Visit Our Clinic
       </a>

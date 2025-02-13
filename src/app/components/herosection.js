@@ -1,7 +1,7 @@
 export default function HeroSection() {
     return (
       <section className="py-10 px-20">
-        <div className="container mx-auto flex flex-col md:flex-row items-center">
+        <div className="container mx-auto flex flex-col md:flex-row items-center  rounded-3xl">
           {/* Left Side (Text) */}
           <div className="md:w-3/5 text-justify px-16">
             <h2 className="text-5xl font-bold text-black mb-6">
@@ -14,7 +14,7 @@ export default function HeroSection() {
               vitae ullamcorper ex.
             </p>
             <div className="flex md:justify-center justify-center">
-              <button className="bg-black text-white text-lg px-6 py-3 rounded-full shadow-lg hover:bg-gray-900 transition">
+              <button className="bg-[#6FC4FA] text-white text-lg px-6 py-3 rounded-full shadow-lg hover:bg-[#8ED1FB] transition">
                 Book an Appointment
               </button>
             </div>
@@ -23,7 +23,7 @@ export default function HeroSection() {
           {/* Right Side (Image) */}
           <div className="md:w-2/5 mt-10 md:mt-0">
             <img
-              src="/Assets/10001724.jpg"
+              src="/Assets/image3(1).jpg"
               alt="Aesthetic treatment"
               className="rounded-xl shadow-lg w-full max-w-sm md:max-w-md"
             />

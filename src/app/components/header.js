@@ -5,26 +5,26 @@ export default function Header() {
   return (
     <header className="flex justify-around items-center p-4 bg-white shadow-md">
       <div className="text-2xl font-bold text-gray-900">
-        <span>The Aesthetic Clinic</span>
+        <Link href="/">The Aesthetic Clinic</Link>
       </div>
 
       <nav className="flex space-x-6">
-        <Link href="#treatments" className="text-gray-700 hover:text-blue-600">
+        <Link href="/#treatments" className="text-gray-700 hover:text-[#8ED1FB] transition">
           Treatments
         </Link>
-        <Link href="#pricing" className="text-gray-700 hover:text-blue-600">
+        <Link href="/pricing#pricing" className="text-gray-700 hover:text-[#8ED1FB] transition">
           Pricing
         </Link>
-        <Link href="#about-us" className="text-gray-700 hover:text-blue-600">
-          About Us
+        <Link href="/#about-me" className="text-gray-700 hover:text-[#8ED1FB] transition">
+          About Me
         </Link>
-        <Link href="#contact-us" className="text-gray-700 hover:text-blue-600">
+        <Link href="/#contact-us" className="text-gray-700 hover:text-[#8ED1FB] transition">
           Contact Us
         </Link>
       </nav>
 
-      <div className="">
-        <button className="bg-black text-white py-2 px-6 rounded-lg hover:bg-gray-800">
+      <div>
+        <button className="bg-[#6FC4FA] text-white py-2 px-6 rounded-3xl hover:bg-[#8ED1FB] transition">
           Book an Appointment
         </button>
       </div>
