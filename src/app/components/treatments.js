@@ -1,12 +1,15 @@
-import TreatmentCard from "./treatmentcard";
+'use client';
+import { motion } from 'framer-motion';
+import Link from 'next/link';
+import TreatmentCard from './treatmentcard';
 
 const treatments = [
-  { title: "Fillers", image: "/Assets/image5.jpg" },
-  { title: "Polynucleotides", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4txBl0W8iNYxHR5w6fXliE5bhQSKXaszTiw&s" },
-  { title: "Profhilo", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4txBl0W8iNYxHR5w6fXliE5bhQSKXaszTiw&s" },
-  { title: "Skin Boosters", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4txBl0W8iNYxHR5w6fXliE5bhQSKXaszTiw&s" },
-  { title: "Mesotherapy", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4txBl0W8iNYxHR5w6fXliE5bhQSKXaszTiw&s" },
-  { title: "Lumi Eyes", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4txBl0W8iNYxHR5w6fXliE5bhQSKXaszTiw&s" },
+  { title: "Fillers", image: "/Assets/image5.jpg", id: 20, category: "Dermal Fillers" },
+  { title: "Polynucleotides", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4txBl0W8iNYxHR5w6fXliE5bhQSKXaszTiw&s", id: 11, category: "Regenerative & Skin Treatments" },
+  { title: "Profhilo", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4txBl0W8iNYxHR5w6fXliE5bhQSKXaszTiw&s", id: 7, category: "Regenerative & Skin Treatments" },
+  { title: "Skin Boosters", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4txBl0W8iNYxHR5w6fXliE5bhQSKXaszTiw&s", id: 12, category: "Regenerative & Skin Treatments" },
+  { title: "Mesotherapy", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4txBl0W8iNYxHR5w6fXliE5bhQSKXaszTiw&s", id: 10, category: "Mesotherapy" },
+  { title: "Lumi Eyes", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4txBl0W8iNYxHR5w6fXliE5bhQSKXaszTiw&s", id: 6, category: "Regenerative & Skin Treatments" },
 ];
 
 const Treatments = () => {
@@ -15,9 +18,19 @@ const Treatments = () => {
       <h2 className="text-center text-5xl font-bold text-gray-900 mb-8">
         Our Treatments
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-y-8 px-32 place-items-center">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-4 md:px-32 place-items-center">
         {treatments.map((treatment, index) => (
-          <TreatmentCard key={index} title={treatment.title} image={treatment.image} />
+          <motion.div
+            key={index}
+            className="cursor-pointer"
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: index * 0.25 }}
+          >
+            <Link href={`/pricing?selected=${treatment.id}&category=${encodeURIComponent(treatment.category)}`} passHref>
+              <TreatmentCard title={treatment.title} image={treatment.image} />
+            </Link>
+          </motion.div>
         ))}
       </div>
     </section>
@@ -25,4 +38,3 @@ const Treatments = () => {
 };
 
 export default Treatments;
-
