@@ -1,9 +1,9 @@
-// src/app/treatments/treatmentcard.js
+
 const TreatmentCard = ({ title, image, onClick }) => {
   return (
     <div
       className="relative bg-gradient-to-b from-[#6FC4FA] to-[#8ED1FB] rounded-xl shadow-lg overflow-hidden max-w-sm mx-auto transition-transform duration-300 hover:scale-105 cursor-pointer group"
-      onClick={onClick} // Trigger the onClick prop when the card is clicked
+      onClick={onClick} 
     >
       <img src={image} alt={title} className="w-full h-64 object-cover" />
       <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-50"></div>

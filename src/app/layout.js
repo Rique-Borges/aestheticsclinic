@@ -1,10 +1,8 @@
-// src/app/layout.js
-import './globals.css'; // Your global styles
+import './globals.css'; 
 import { Geist } from 'next/font/google'; // Import only Geist Serif font
 import Header from './components/header'; // Import Header component
 import Footer from './components/footer'; // Import Footer component
 
-// Load only the Geist Serif font
 const geist = Geist({
   weight: ['400', '600'],
   subsets: ['latin'],

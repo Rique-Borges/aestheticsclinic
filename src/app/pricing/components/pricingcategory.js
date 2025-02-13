@@ -11,13 +11,11 @@ const PricingCategory = ({ category, items, selectedTreatmentId, selectedCategor
     let expandTimer;
     let flashTimer;
     if (selectedCategory && selectedCategory === category) {
-      // Delay the expansion by 500ms
       expandTimer = setTimeout(() => {
         setIsExpanded(true);
         const found = items.find(item => item.id === selectedTreatmentId);
         if (found) {
           setFlashItemId(selectedTreatmentId);
-          // Flash highlight for 1000ms
           flashTimer = setTimeout(() => {
             setFlashItemId(null);
           }, 1000);

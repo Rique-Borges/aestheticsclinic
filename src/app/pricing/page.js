@@ -2,7 +2,6 @@
 import { useSearchParams } from 'next/navigation';
 import PricingCategory from './components/pricingcategory';
 
-// Pricing data with unique IDs for each item
 const pricingData = [
   {
     category: "Dermal Fillers",
@@ -34,7 +33,6 @@ const pricingData = [
 ];
 
 const Page = () => {
-  // Retrieve both 'selected' and 'category' query parameters
   const searchParams = useSearchParams();
   const selectedTreatmentStr = searchParams.get('selected');
   const selectedTreatmentId = selectedTreatmentStr ? parseInt(selectedTreatmentStr, 10) : null;

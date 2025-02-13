@@ -4,7 +4,7 @@ const ContactUs = () => {
         {/* Clinic Image */}
         <div className="w-3/4 md:w-2/5 ml-24">
           <img
-            src="/Assets/image6.jpg" // Change this path to your actual image
+            src="/Assets/image6.jpg"
             alt="Clinic Exterior"
             className="rounded-2xl w-full h-auto"
           />
