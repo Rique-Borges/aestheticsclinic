@@ -1,45 +1,58 @@
-'use client'
-import { useState } from 'react';
+'use client';
+import { useState, useEffect } from 'react';
 import PricingItem from './pricingitem';
-import { ChevronDown } from 'lucide-react'; // Import arrow icon
+import { ChevronDown } from 'lucide-react';
 
-const PricingCategory = ({ category, items }) => {
+const PricingCategory = ({ category, items, selectedTreatmentId, selectedCategory }) => {
   const [isExpanded, setIsExpanded] = useState(false);
+  const [flashItemId, setFlashItemId] = useState(null);
+
+  useEffect(() => {
+    let expandTimer;
+    let flashTimer;
+    if (selectedCategory && selectedCategory === category) {
+      // Delay the expansion by 500ms
+      expandTimer = setTimeout(() => {
+        setIsExpanded(true);
+        const found = items.find(item => item.id === selectedTreatmentId);
+        if (found) {
+          setFlashItemId(selectedTreatmentId);
+          // Flash highlight for 1000ms
+          flashTimer = setTimeout(() => {
+            setFlashItemId(null);
+          }, 1000);
+        }
+      }, 250);
+    }
+    return () => {
+      clearTimeout(expandTimer);
+      clearTimeout(flashTimer);
+    };
+  }, [selectedCategory, selectedTreatmentId, category, items]);
 
   const toggleCategory = () => {
-    setIsExpanded((prev) => !prev);
+    setIsExpanded(prev => !prev);
   };
 
   return (
     <div>
       <button
-        className={`flex justify-between items-center w-full text-2xl font-semibold text-gray-800 
-          py-3 px-6 rounded-lg border border-[#8ED1FB] bg-white
-          transition-all duration-500 ease-in-out shadow-md 
-          hover:bg-[#8ED1FB] hover:text-white hover:shadow-lg
-          active:bg-[#8ED1FB] active:text-white active:scale-95 active:shadow-none
-        `}
         onClick={toggleCategory}
+        className="flex justify-between items-center w-full text-2xl font-semibold text-gray-800 
+                   py-3 px-6 rounded-lg border border-[#8ED1FB] bg-white transition-all duration-500 ease-in-out
+                   shadow-md hover:bg-[#8ED1FB] hover:text-white hover:shadow-lg active:bg-[#8ED1FB] active:text-white active:scale-95 active:shadow-none"
       >
         {category}
-        <ChevronDown
-          className={`w-6 h-6 transition-transform duration-300 ${
-            isExpanded ? 'rotate-180' : 'rotate-0'
-          }`}
-        />
+        <ChevronDown className={`w-6 h-6 transition-transform duration-300 ${isExpanded ? 'rotate-180' : 'rotate-0'}`} />
       </button>
-      
-      <ul
-        className={`space-y-2 pl-4 border-l-4 border-[#8ED1FB] transition-all duration-300 ease-in-out overflow-hidden ${
-          isExpanded ? 'max-h-screen' : 'max-h-0'
-        }`}
-      >
-        {items.map((item, index) => (
+      <ul className={`space-y-2 pl-4 border-l-4 border-[#8ED1FB] transition-all duration-[1200ms] ease-in-out overflow-hidden ${isExpanded ? 'max-h-screen' : 'max-h-0'}`}>
+        {items.map(item => (
           <PricingItem
-            key={index}
+            key={item.id}
             name={item.name}
             price={item.price}
             description={item.description}
+            isHighlighted={item.id === flashItemId}
           />
         ))}
       </ul>
