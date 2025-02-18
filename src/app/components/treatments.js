@@ -14,15 +14,15 @@ const treatments = [
 
 const Treatments = () => {
   return (
-    <section className="py-16 bg-gray-50 mx-32" id="treatments">
-      <h2 className="text-center text-5xl font-bold text-gray-900 mb-8">
+    <section className="py-16 bg-gray-50 mx-4 sm:mx-8 md:mx-32" id="treatments">
+      <h2 className="text-center text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-8">
         Our Treatments
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-4 md:px-32 place-items-center">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 px-4 md:px-32 place-items-center">
         {treatments.map((treatment, index) => (
           <motion.div
             key={index}
-            className="cursor-pointer"
+            className="cursor-pointer w-full max-w-xs"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: index * 0.25 }}
