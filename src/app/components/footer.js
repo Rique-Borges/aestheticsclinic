@@ -68,11 +68,11 @@ export default function Footer() {
         </div>
 
         {/* Column 4: Book Appointment Button */}
-        <div className="flex justify-center md:justify-start">
-          <button className="bg-[#6FC4FA] text-white px-6 py-3 rounded-3xl hover:bg-[#8ED1FB] transition w-full md:w-auto">
-            Book an Appointment
-          </button>
-        </div>
+        <div className="flex items-center">
+      <button className="bg-[#6FC4FA] text-white px-6 py-3 rounded-3xl  hover:bg-[#8ED1FB] transition">
+        Book an Appointment
+      </button>
+    </div>
       </div>
 
       {/* Footer Bottom */}
