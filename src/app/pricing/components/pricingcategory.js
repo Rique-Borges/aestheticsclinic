@@ -36,14 +36,23 @@ const PricingCategory = ({ category, items, selectedTreatmentId, selectedCategor
     <div>
       <button
         onClick={toggleCategory}
-        className="flex justify-between items-center w-full text-2xl font-semibold text-gray-800 
-                   py-3 px-6 rounded-lg border border-[#8ED1FB] bg-white transition-all duration-500 ease-in-out
-                   shadow-md hover:bg-[#8ED1FB] hover:text-white hover:shadow-lg active:bg-[#8ED1FB] active:text-white active:scale-95 active:shadow-none"
+        className="flex justify-between items-center w-full text-xl md:text-2xl font-semibold text-gray-800 
+                   py-3 px-4 md:px-6 rounded-lg border border-[#8ED1FB] bg-white transition-all duration-500 ease-in-out
+                   shadow-md hover:bg-[#8ED1FB] hover:text-white hover:shadow-lg active:bg-[#8ED1FB] active:text-white 
+                   active:scale-95 active:shadow-none"
       >
         {category}
-        <ChevronDown className={`w-6 h-6 transition-transform duration-300 ${isExpanded ? 'rotate-180' : 'rotate-0'}`} />
+        <ChevronDown
+          className={`w-5 h-5 md:w-6 md:h-6 transition-transform duration-300 ${
+            isExpanded ? 'rotate-180' : 'rotate-0'
+          }`}
+        />
       </button>
-      <ul className={`space-y-2 pl-4 border-l-4 border-[#8ED1FB] transition-all duration-[1200ms] ease-in-out overflow-hidden ${isExpanded ? 'max-h-screen' : 'max-h-0'}`}>
+      <ul
+        className={`space-y-2 pl-4 border-l-4 border-[#8ED1FB] transition-all duration-[1200ms] ease-in-out overflow-hidden ${
+          isExpanded ? 'max-h-screen' : 'max-h-0'
+        }`}
+      >
         {items.map(item => (
           <PricingItem
             key={item.id}

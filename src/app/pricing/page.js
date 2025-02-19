@@ -1,4 +1,6 @@
 'use client';
+
+import { Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import PricingCategory from './components/pricingcategory';
 
@@ -33,6 +35,14 @@ const pricingData = [
 ];
 
 const Page = () => {
+  return (
+    <Suspense fallback={<p>Loading...</p>}>
+      <PricingPageContent />
+    </Suspense>
+  );
+};
+
+const PricingPageContent = () => {
   const searchParams = useSearchParams();
   const selectedTreatmentStr = searchParams.get('selected');
   const selectedTreatmentId = selectedTreatmentStr ? parseInt(selectedTreatmentStr, 10) : null;
@@ -57,4 +67,3 @@ const Page = () => {
 };
 
 export default Page;
-

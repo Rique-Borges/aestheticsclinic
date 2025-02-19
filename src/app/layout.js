@@ -1,9 +1,9 @@
 import './globals.css'; 
-import { Geist } from 'next/font/google'; // Import only Geist Serif font
+import { Outfit } from 'next/font/google'; // Import only Geist Serif font
 import Header from './components/header'; // Import Header component
 import Footer from './components/footer'; // Import Footer component
 
-const geist = Geist({
+const geist = Outfit({
   weight: ['400', '600'],
   subsets: ['latin'],
 });

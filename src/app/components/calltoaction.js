@@ -1,7 +1,7 @@
 import Link from "next/link";
 const CTA = () => {
   return (
-    <section className="py-0 px-10 flex flex-col md:flex-row items-center justify-center gap-0 md:mx-24 md:ml-48">
+    <section className="py-0 px-10 flex flex-col md:flex-row items-center justify-center gap-0 md:mx-24 md:ml-48 md:mt-8">
       {/* Left Image */}
       <div className="w-full md:w-1/2 md:mx-24 mb-6 md:mb-0">
         <img
