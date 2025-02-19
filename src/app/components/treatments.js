@@ -4,17 +4,17 @@ import Link from 'next/link';
 import TreatmentCard from './treatmentcard';
 
 const treatments = [
-  { title: "Fillers", image: "/Assets/image5.jpg", id: 20, category: "Dermal Fillers" },
-  { title: "Polynucleotides", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4txBl0W8iNYxHR5w6fXliE5bhQSKXaszTiw&s", id: 11, category: "Regenerative & Skin Treatments" },
-  { title: "Profhilo", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4txBl0W8iNYxHR5w6fXliE5bhQSKXaszTiw&s", id: 7, category: "Regenerative & Skin Treatments" },
-  { title: "Skin Boosters", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4txBl0W8iNYxHR5w6fXliE5bhQSKXaszTiw&s", id: 12, category: "Regenerative & Skin Treatments" },
-  { title: "Mesotherapy", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4txBl0W8iNYxHR5w6fXliE5bhQSKXaszTiw&s", id: 10, category: "Mesotherapy" },
-  { title: "Lumi Eyes", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4txBl0W8iNYxHR5w6fXliE5bhQSKXaszTiw&s", id: 6, category: "Regenerative & Skin Treatments" },
+  { title: "Fillers", image: "/Assets/image10.jpg", id: 20, category: "Dermal Fillers" },
+  { title: "Polynucleotides", image: "/Assets/image11.jpg", id: 11, category: "Regenerative & Skin Treatments" },
+  { title: "Profhilo", image: "/Assets/image5.jpg", id: 7, category: "Regenerative & Skin Treatments" },
+  { title: "Skin Boosters", image: "/Assets/image9.jpg", id: 12, category: "Regenerative & Skin Treatments" },
+  { title: "Mesotherapy", image: "/Assets/image12.jpeg", id: 10, category: "Mesotherapy" },
+  { title: "Lumi Eyes", image: "/Assets/image7.jpg", id: 6, category: "Regenerative & Skin Treatments" },
 ];
 
 const Treatments = () => {
   return (
-    <section className="py-16 bg-gray-50 mx-4 sm:mx-8 md:mx-32" id="treatments">
+    <section className="py-8 mx-4 sm:mx-8 md:mx-32" id="treatments">
       <h2 className="text-center text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-8">
         Our Treatments
       </h2>

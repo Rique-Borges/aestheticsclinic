@@ -18,7 +18,7 @@ export default function Header() {
       <div className="flex justify-between items-center p-4 max-w-6xl mx-auto">
         {/* Logo */}
         <div className="text-2xl font-bold text-gray-900">
-          <Link href="/">The Aesthetic Clinic</Link>
+          <Link href="/">The Aesthetics Clinic</Link>
         </div>
 
         {/* Desktop Navigation */}
@@ -39,9 +39,11 @@ export default function Header() {
 
         {/* Desktop "Book an Appointment" Button */}
         <div className="hidden md:block">
+        <Link href={"https://wa.link/dtawoe"} target="_blank" rel="noopener noreferrer">
           <button className="bg-[#6FC4FA] text-white py-2 px-6 rounded-3xl hover:bg-[#8ED1FB] transition">
             Book an Appointment
           </button>
+          </Link>
         </div>
 
         {/* Mobile Menu Button */}
@@ -90,12 +92,14 @@ export default function Header() {
             </Link>
 
             {/* Mobile "Book an Appointment" Button */}
+            <Link href={"https://wa.link/dtawoe"} target="_blank" rel="noopener noreferrer">
             <button
               onClick={handleMenuItemClick}
               className="bg-[#6FC4FA] text-white py-2 px-6 rounded-3xl hover:bg-[#8ED1FB] transition mt-4 w-full"
             >
               Book an Appointment
             </button>
+            </Link>
           </motion.div>
         )}
       </AnimatePresence>

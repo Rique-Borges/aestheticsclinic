@@ -1,3 +1,4 @@
+import Link from "next/link";
 const CTA = () => {
   return (
     <section className="py-0 px-10 flex flex-col md:flex-row items-center justify-center gap-0 md:mx-24 md:ml-48">
@@ -18,9 +19,11 @@ const CTA = () => {
         <p className="text-gray-600 text-xl mb-6">
           Limited slots available. <br /> Book your appointment today!
         </p>
+        <Link href={"https://wa.link/dtawoe"} target="_blank" rel="noopener noreferrer">
         <button className="bg-[#6FC4FA] text-white px-6 py-3 rounded-full text-lg font-medium shadow-md hover:bg-[#8ED1FB] transition">
-          Book An Appointment
+           Book an Appointment
         </button>
+        </Link>
       </div>
     </section>
   );

@@ -1,3 +1,4 @@
+import Link from "next/link";
 const ContactUs = () => {
   return (
     <section
@@ -23,13 +24,14 @@ const ContactUs = () => {
           ⏰ <strong>Business Hours:</strong> Open Tuesday to Saturday, 8 AM – 8 PM.
         </p>
         <p className="mb-2">
-          📞 <strong>Phone:</strong> 087 403 8654
+          📞 <strong>Phone:</strong> 87 403 8654
         </p>
         <p className="mb-2">
-          💬 <strong>WhatsApp:</strong> Message us
-        </p>
+  💬 <strong>WhatsApp:</strong> <Link href={"https://wa.link/dtawoe"} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700">Message us</Link>
+</p>
+
         <p className="mb-2">
-          📧 <strong>Email:</strong> aestheticsclinicie@gmail.com
+          📧 <strong>Email:</strong> <Link href="mailto:yourclinic@email.com" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700">aestheticsclinicie@gmail.com</Link>
         </p>
       </div>
     </section>

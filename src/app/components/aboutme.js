@@ -34,14 +34,16 @@ const AboutMe = () => {
 
       {/* Right Image with Label */}
       <div className="relative w-full md:w-1/2 m-4">
-        <img
-          src="/Assets/image4.jpg"
-          alt="Telma Borges Simoes"
-          className="w-full rounded-2xl shadow-lg"
-        />
-        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent text-white text-center py-3 rounded-b-2xl text-lg font-bold">
-          Telma Borges Simões
-        </div>
+      <img
+  src="/Assets/image4.jpg"
+  alt="Telma Borges Simoes"
+  className="w-full max-w-xs md:max-w-sm rounded-2xl shadow-lg mx-auto"
+/>
+
+<div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-full max-w-xs md:max-w-sm bg-gradient-to-t from-black/70 to-transparent text-white text-center py-3 rounded-b-2xl text-lg font-bold">
+  Telma Borges Simões
+</div>
+
       </div>
     </section>
   );

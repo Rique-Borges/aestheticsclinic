@@ -1,10 +1,11 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function HeroSection() {
   return (
-    <section className="py-12 px-6 md:px-20">
+    <section className="py-8 px-6 md:px-20">
       <div className="container mx-auto flex flex-col-reverse md:flex-row items-center">
         {/* Left Side (Text) */}
         <motion.div
@@ -14,15 +15,16 @@ export default function HeroSection() {
           className="w-full md:w-3/5 text-center md:text-left px-6 md:px-16 mt-8 md:mt-0"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-black mb-6 leading-tight">
-            Rediscover your confidence
-          </h2>
-          <p className="text-lg text-gray-600 mb-8">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id
-              arcu maximus, faucibus erat nec, dapibus nunc. Nullam ut vestibulum
-              libero. Praesent sodales scelerisque neque sit amet rhoncus. Nulla
-              vitae ullamcorper ex.
-          </p>
+  Rediscover Your Confidence
+</h2>
+<p className="text-lg text-gray-600 mb-8">
+  Elevate your natural beauty with advanced, non-invasive aesthetic treatments.  
+  At <strong>The Aesthetic Clinic</strong>, we provide expert care to help you feel radiant,  
+  refreshed, and confident in your own skin.
+</p>
+
           <div className="flex justify-center md:justify-start">
+            <Link href={"https://wa.link/dtawoe"} target="_blank" rel="noopener noreferrer">
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -30,6 +32,7 @@ export default function HeroSection() {
             >
               Book an Appointment
             </motion.button>
+            </Link>
           </div>
         </motion.div>
 
