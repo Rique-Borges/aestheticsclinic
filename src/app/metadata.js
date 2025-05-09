@@ -1,6 +1,6 @@
 'use client'
 export const metadata = {
-    title: "The Aesthetic Clinic",
+    title: "The Aesthetics Clinic",
     description: "Professional aesthetic treatments for radiant beauty",
   };
   

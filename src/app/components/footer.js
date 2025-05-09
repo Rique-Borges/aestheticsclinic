@@ -20,7 +20,7 @@ export default function Footer() {
             </li>
             <li>
               <a href="/pricing" className="hover:text-gray-600">
-                Pricing
+                Prices
               </a>
             </li>
             <li>
@@ -46,8 +46,8 @@ export default function Footer() {
               </a>
             </li>
             <li>
-              <a href="mailto:yourclinic@email.com" className="hover:text-gray-600">
-                aestheticsclinicie@email.com
+              <a href="mailto:aestheticsclinicie@gmail.com" className="hover:text-gray-600">
+                aestheticsclinicie@gmail.com
               </a>
             </li>
           </ul>
@@ -82,7 +82,7 @@ export default function Footer() {
 
       {/* Footer Bottom */}
       <div className="mt-8 text-center text-gray-600 text-sm">
-        &copy; 2025 The Aesthetic Clinic | All rights reserved
+        &copy; 2025 The Aesthetics Clinic | All rights reserved
       </div>
     </footer>
   );
