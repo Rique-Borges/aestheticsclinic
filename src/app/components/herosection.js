@@ -17,18 +17,16 @@ export default function HeroSection() {
           <h2 className="text-4xl md:text-5xl font-bold text-black mb-6 leading-tight">
   Rediscover Your Confidence
 </h2>
-<p className="text-lg text-gray-600 mb-8">
-  Elevate your natural beauty with advanced, non-invasive aesthetic treatments.  
-  At <strong>The Aesthetic Clinic</strong>, we provide expert care to help you feel radiant,  
-  refreshed, and confident in your own skin.
+<p className="text-lg text-gray-600 mb-8 text-justify">
+Elevate your natural beauty with advanced, non-invasive aesthetic treatments at our renowned Dublin clinic. At <strong>The Aesthetics Clinic</strong>, we provide expert care for your face, skin, and body, helping you achieve radiant, refreshed, and confident results in your own skin. Beyond enhancing your appearance, our Dublin clinic understands the importance of boosting self-esteem and ensuring well-being through personalized aesthetic care tailored to each individual. Every person deserves to feel empowered in their own skin.
 </p>
 
-          <div className="flex justify-center md:justify-start">
+          <div className="flex justify-center md:justify-center"> 
             <Link href={"https://wa.link/dtawoe"} target="_blank" rel="noopener noreferrer">
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-[#6FC4FA] text-white text-lg px-6 py-3 rounded-full shadow-lg hover:bg-[#8ED1FB] transition"
+              className="bg-[#6FC4FA] text-white text-2xl px-6 py-3 rounded-full shadow-lg hover:bg-[#8ED1FB] transition"
             >
               Book an Appointment
             </motion.button>

@@ -17,17 +17,25 @@ export default function Header() {
     <header className="bg-white shadow-md relative z-50">
       <div className="flex justify-between items-center p-4 max-w-6xl mx-auto">
         {/* Logo */}
-        <div className="text-2xl font-bold text-gray-900">
-          <Link href="/">The Aesthetics Clinic</Link>
-        </div>
+        <div className="flex items-center text-2xl font-bold text-gray-900">
+  <Link href="/" className="flex items-center space-x-2">
+    <img
+      src="/Assets/image13.jpg"
+      className="h-8" 
+      alt="Logo"
+    />
+    <span>‎ ‎ The Aesthetics Clinic</span>
+  </Link>
+</div>
+
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex space-x-6">
           <Link href="/#treatments" className="text-gray-700 hover:text-[#8ED1FB] transition">
             Treatments
           </Link>
-          <Link href="/pricing#pricing" className="text-gray-700 hover:text-[#8ED1FB] transition">
-            Pricing
+          <Link href="/pricing" className="text-gray-700 hover:text-[#8ED1FB] transition">
+            Prices
           </Link>
           <Link href="/#about-me" className="text-gray-700 hover:text-[#8ED1FB] transition">
             About Me
@@ -40,7 +48,7 @@ export default function Header() {
         {/* Desktop "Book an Appointment" Button */}
         <div className="hidden md:block">
         <Link href={"https://wa.link/dtawoe"} target="_blank" rel="noopener noreferrer">
-          <button className="bg-[#6FC4FA] text-white py-2 px-6 rounded-3xl hover:bg-[#8ED1FB] transition">
+          <button className="bg-[#6FC4FA] text-white text-lg py-2 px-6 rounded-3xl hover:bg-[#8ED1FB] transition">
             Book an Appointment
           </button>
           </Link>
@@ -70,11 +78,11 @@ export default function Header() {
               Treatments
             </Link>
             <Link
-              href="/pricing#pricing"
+              href="/pricing"
               onClick={handleMenuItemClick}
               className="text-gray-700 hover:text-[#8ED1FB] transition"
             >
-              Pricing
+              Prices
             </Link>
             <Link
               href="/#about-me"
