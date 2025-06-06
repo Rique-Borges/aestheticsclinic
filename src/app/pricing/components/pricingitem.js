@@ -1,4 +1,4 @@
-const PricingItem = ({ name, price, description, isHighlighted }) => {
+const PricingItem = ({ name, price,discountedPrice, description, isHighlighted }) => {
   return (
     <li
       className={`p-4 rounded-md transition-all duration-500 ease-in-out 
@@ -6,7 +6,7 @@ const PricingItem = ({ name, price, description, isHighlighted }) => {
     >
       <h3 className="font-semibold text-lg md:text-xl">{name}</h3>
       <p className="text-sm md:text-base">{description}</p>
-      <p className="text-lg font-bold md:text-xl">{price}</p>
+      <span className="line-through text-gray-400">{price}</span><span className="text-lg font-bold md:text-xl"><span/> {discountedPrice}</span>
     </li>
   );
 };

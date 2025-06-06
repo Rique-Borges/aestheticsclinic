@@ -21,10 +21,10 @@ const ContactUs = () => {
           📍 <strong>Address:</strong> <a href="https://maps.app.goo.gl/7YYV8KSfB4yrxBbo8" className="text-blue-500 hover:text-blue-700">42 Richmond St, Portobello, Dublin 2, D02TV08.</a>
         </p>
         <p className="mb-2">
-          ⏰ <strong>Business Hours:</strong> <span className="text-blue-500 hover:text-blue-700">Open Tuesday to Saturday, 8 AM – 8 PM</span>, to accommodate your treatment bookings and consultations.
+          ⏰ <strong>Business Hours:</strong> <span className="text-blue-500 hover:text-blue-700">Open Monday to Monday, 8 AM – 8 PM</span>, to accommodate your treatment bookings and consultations.
         </p>
         <p className="mb-2">
-          📞 <strong>Phone:</strong> <span className="text-blue-500 hover:text-blue-700">87 403 8654</span> – Call us to schedule your aesthetic treatments and consultations.
+          📞 <strong>Phone:</strong> <span className="text-blue-500 hover:text-blue-700">087 403 8654</span> – Call us to schedule your aesthetic treatments and consultations.
         </p>
         <p className="mb-2">
   💬 <strong>WhatsApp:</strong> <Link href={"https://wa.link/dtawoe"} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700"> Message us</Link> to inquire about our aesthetic treatments and book your consultation.

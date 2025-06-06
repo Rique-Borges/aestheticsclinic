@@ -39,9 +39,9 @@ export default function Footer() {
               <a href="https://maps.app.goo.gl/7YYV8KSfB4yrxBbo8" className="hover:text-gray-600">
             42 Richmond St, Portobello D02TV08</a>
             </li>
-            <li>Tuesday to Saturday: 8 AM - 8 PM</li>
+            <li>Monday to Monday: 8 AM - 8 PM</li>
             <li>
-              <a href="tel:+353874038654" className="hover:text-gray-600">
+              <a href="tel:+3530874038654" className="hover:text-gray-600">
                 087 403 8654
               </a>
             </li>

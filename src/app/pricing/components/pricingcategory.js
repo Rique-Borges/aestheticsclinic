@@ -58,6 +58,7 @@ const PricingCategory = ({ category, items, selectedTreatmentId, selectedCategor
             key={item.id}
             name={item.name}
             price={item.price}
+            discountedPrice={item.discountedPrice}
             description={item.description}
             isHighlighted={item.id === flashItemId}
           />
